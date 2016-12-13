@@ -1,0 +1,17 @@
+body {
+  color: #009999;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1, h2 {
+  color: black;
+}
+
+span.pointer {
+  cursor: pointer;
+}
+
+div.hidden {
+  display: none;
+  border-top: 1px solid black;
+}
