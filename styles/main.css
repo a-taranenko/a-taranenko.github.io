@@ -1,17 +1,36 @@
 body {
   color: #009999;
   font-family: 'Nunito Sans', sans-serif;
+  margin: auto;
+  background-color: #142850;
+}
+
+section#body-container {
+  width: 960px;
+  margin: auto;
 }
 
 h1, h2 {
-  color: black;
+  color: white;
 }
 
-span.pointer {
+.pointer {
   cursor: pointer;
+}
+
+.pointer:hover {
+  color: orange;
+}
+
+article.hidden {
+  display: none;
 }
 
 div.hidden {
   display: none;
-  border-top: 1px solid black;
+}
+
+div.project-data {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }

@@ -1,0 +1,27 @@
+nav {
+  border-bottom: 1px solid white;
+  overflow: auto;
+}
+
+div.name {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  float: left;
+  margin: 5px 0px 0px 16px;
+}
+
+div.nav-links {
+  text-transform: uppercase;
+  float: right;
+}
+
+p.nav-links {
+  float: left;
+  margin-right: 16px;
+}
+
+p.nav-links a {
+  text-decoration: none;
+  color: #009999;
+}
