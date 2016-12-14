@@ -1,5 +1,6 @@
 'use strict';
 
+// Function that builds HTML for each project
 function appendProject(project) {
   let $feed = `<li>
     <span id="${project.id}" class="pointer">${project.name}</span>
@@ -11,11 +12,14 @@ function appendProject(project) {
   return $feed;
 }
 
+// Function that attaches event listeners to all projects
 function addProjectListener(project) {
+  // On click will slide up or down project description box
   $(`#${project.id}`).on("click", function(e) {
     if ( $(`.${project.class}`).is(":hidden") ) {
       $(`.${project.class}`).slideDown("fast");
 
+      // All other project boxes are hidden when a current project is selected
       projects.forEach(function(projectInner) {
         if (projectInner.endpoint !== project.endpoint && $(`.${projectInner.class}`).is(":visible")) {
           $(`.${projectInner.class}`).slideUp("fast");
@@ -27,6 +31,7 @@ function addProjectListener(project) {
   });
 }
 
+// Builds HTML and creates event listeners for all projects
 function loadProjects() {
   $("#project-list-container").empty();
 
@@ -37,6 +42,7 @@ function loadProjects() {
   });
 }
 
+// Loads proper page content through listeners
 $(document).ready(function() {
   $("#home-container").slideDown("slow");
 
