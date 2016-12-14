@@ -6,6 +6,9 @@
   <!-- Styling for index.html -->
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 
+  <!-- Styling for navbar -->
+  <link rel="stylesheet" type="text/css" href="styles/nav.css">
+
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
 
@@ -18,15 +21,56 @@
   <!-- Document load -->
   <script type="text/javascript" src="scripts/doc_load.js"></script>
 </head>
+
 <body>
-  <h1>Hello and Welcome to my Portfolio Website</h1>
+  <nav>
+    <div class="name"><span class="first-name">Anton</span> <span class="last-name">Taranenko</span></div>
+    <div class="nav-links">
+      <p class="nav-links pointer" id="home">Home</p>
+      <p class="nav-links pointer" id="about-me">About Me</p>
+      <p class="nav-links pointer" id="my-projects">My Projects</p>
+      <p class="nav-links pointer" id="contact">Contact</p>
+    </div>
+  </nav>
 
-  <h2>About Me :)</h2>
+  <section id="body-container">
+    <article id="home-container" class="hidden">
+      <h2>Hello and Welcome to my Website</h2>
 
-  <p>I am a Researcher and an Engineer turned Web Developer, who is passionate about learning and implementing new technologies. Web Development provides a solid platform for my goals and ambitions - to exercise my creative muscle and avoid the monotony of 'carbon-copy' days.</p>
+      <p>I am a Researcher and an Engineer turned Web Developer, who is passionate about learning and implementing new technologies. Web Development provides a solid platform for my goals and ambitions - to exercise my creative muscle and avoid the monotony of 'carbon-copy' days.</p>
+    </article>
 
-  <h2>My Projects</h2>
+    <article id="about-container" class="hidden">
+      <h2>About Me</h2>
 
-  <ul id="project-container"></ul>
+      <p>I am a Junior Developer who looks forward to working on and creating something new everyday because it
+        gives me a great sense of satisfaction and enjoyment. I am also a Chemical Engineer, whose tasks (i.e.
+        solving continuity equations) often required heavy use of coding, which over time greatly raised my
+        programming interest, and made me pursue a new career path. I find it interesting working with others,
+        strive to keep my code clean, and am open to both front and back-end development. Currently, I am
+        looking to strengthen my fundamental programming knowledge, while picking up new concepts and
+        applying both on a daily basis. I am used to learning new languages, I speak three myself, and even spoke
+        conversational Japanese when I was nine.
+      </p>
+    </article>
+
+    <article id="project-container" class="hidden">
+      <h2>My Projects</h2>
+
+      <ul id="project-list-container"></ul>
+    </article>
+
+    <article id="contact-container" class="hidden">
+      <h2>Contact Me</h2>
+
+      <p>Email: taranenko.anton@gmail.com</p>
+
+      <p>LinkedIn: https://ca.linkedin.com/in/anton-taranenko-849a3830</p>
+
+      <p>GitHub: https://github.com/a-taranenko</p>
+
+      <p>Resume: https://resume.creddle.io/review/2idjb1cdtma</p>
+    </article>
+  </section>
 </body>
 </html>
