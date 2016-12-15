@@ -1,0 +1,11 @@
+a {
+  color: #009999;
+}
+
+a:hover {
+  color: orange;
+}
+
+span.contact-name {
+  font-weight: bold;
+}

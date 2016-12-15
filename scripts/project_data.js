@@ -4,11 +4,12 @@ function projectPush(project) {
   projects.push(project);
 }
 
-function Project(title, description, endpoint) {
+function Project(title, description, summary, endpoint) {
   let id = endpoint.split("/")[1].toLowerCase();
 
   this.name = title;
   this.data = description;
+  this.techs = summary;
   this.id = id;
   this.class = `${id}-text`;
   this.endpoint = endpoint;
@@ -26,10 +27,18 @@ const chattyAppDescription = "An application that uses a popular Javascript tech
 const jungleDescription = "An e-commerce application that uses Ruby on Rails on the back end, Active Record to communicate with the database, and Embedded Ruby on the front end. Users can make accounts, purchase products, and provide their reviews.";
 const gitMarkedDescription = "An application that uses GitHub to connect mentors and students by enabling code highlighting and commenting. The project uses Javascript, Express, Postgres, and Sequelize on the backend,  while AJAX, JQuery, and Embedded Javascript are applied on the front end. Codemirror, jsTree help render a user's GitHub repo tree and code.";
 
-const avatarDownloader = new Project("Avatar Downloader", avatarDownloaderDescription, "a-taranenko/avatar-downloader");
-const tinyApp = new Project("TinyApp", tinyAppDescription, "a-taranenko/tiny-app");
-const tweeter = new Project("Tweeter", tweeterDescription, "a-taranenko/tweeter");
-const coolWikiMaps = new Project("Cool Wiki Maps", coolWikiMapsDescription, "a-taranenko/cool-wiki-maps");
-const chattyApp = new Project("Chatty App", chattyAppDescription, "a-taranenko/chatty-app");
-const jungle = new Project("Jungle", jungleDescription, "a-taranenko/jungle-rails");
-const gitMarked = new Project("GitMarked", gitMarkedDescription, "BatBrain/GitMarked");
+const avatarDownloaderSummary = "Javascript, Request, fs, GitHub API";
+const tinyAppSummary = "Javascript, Express, EJS, MongoDB";
+const tweeterSummary = "Javascript, Express, AJAX, JQuery, MongoDB";
+const coolWikiMapsSummary = "Javascript, Express, AJAX, JQuery, Knex.js, Postgres, Heroku, Google Maps API";
+const chattyAppSummary = "Javascript, React.js";
+const jungleSummary = "Ruby, Rails, Postgres, Heroku";
+const gitMarkedSummary = "Javascript, Express, EJS, Postgres, Heroku, Codemirror, jsTree";
+
+const avatarDownloader = new Project("Avatar Downloader", avatarDownloaderDescription, avatarDownloaderSummary, "a-taranenko/avatar-downloader");
+const tinyApp = new Project("TinyApp", tinyAppDescription, tinyAppSummary, "a-taranenko/tiny-app");
+const tweeter = new Project("Tweeter", tweeterDescription, tweeterSummary, "a-taranenko/tweeter");
+const coolWikiMaps = new Project("Cool Wiki Maps", coolWikiMapsDescription, coolWikiMapsSummary, "a-taranenko/cool-wiki-maps");
+const chattyApp = new Project("Chatty App", chattyAppDescription, chattyAppSummary, "a-taranenko/chatty-app");
+const jungle = new Project("Jungle", jungleDescription, jungleSummary, "a-taranenko/jungle-rails");
+const gitMarked = new Project("GitMarked", gitMarkedDescription, gitMarkedSummary, "BatBrain/GitMarked");

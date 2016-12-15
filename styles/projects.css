@@ -1,0 +1,12 @@
+div.hidden {
+  display: none;
+}
+
+div.project-data {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+span.project-name {
+  font-weight: bold;
+}
