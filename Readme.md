@@ -1,6 +1,6 @@
 # My Personal Portfolio single-page Website
 
-This is a simple website that is currently in progress.
+This is a simple website that is currently in progress. Here is the [link](https://a-taranenko.github.io).
 
 ## Motivation
 
