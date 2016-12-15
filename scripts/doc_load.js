@@ -1,71 +1,26 @@
 'use strict';
 
-// Function that builds HTML for each project
-function appendProject(project) {
-  let $feed = `<p>
-    <span id="${project.id}" class="project-name pointer">${project.name} - ${project.techs}</span>
-    <div class="${project.class} hidden project-data">${project.data}
-    <a href="https://github.com/${project.endpoint}" class="pointer">Visit ${project.name}</a>
-    </div>
-    </p>`;
-
-  return $feed;
-}
-
-// Function that attaches event listeners to all projects
-function addProjectListener(project) {
-  // On click will slide up or down project description box
-  $(`#${project.id}`).on("click", function(e) {
-    if ( $(`.${project.class}`).is(":hidden") ) {
-      // $(`.${project.class}`).slideDown("slow");
-      $(`.${project.class}`).show();
-
-      // All other project boxes are hidden when a current project is selected
-      projects.forEach(function(projectInner) {
-        if (projectInner.endpoint !== project.endpoint && $(`.${projectInner.class}`).is(":visible")) {
-          // $(`.${projectInner.class}`).slideUp("slow");
-          $(`.${projectInner.class}`).hide();
-        }
-      });
-    } else {
-      // $(`.${project.class}`).slideUp("slow");
-      $(`.${project.class}`).hide();
-    }
-  });
-}
-
-// Builds HTML and creates event listeners for all projects
-function loadProjects() {
-  $("#project-list-container").empty();
-
-  projects.forEach(function(project) {
-    $("#project-list-container").append(appendProject(project));
-
-    addProjectListener(project);
-  });
-}
-
-// Loads proper page content via listeners
+// Loads proper page content and indicator via listeners
 $(document).ready(function() {
-  $("#home").on("click", function(e) {
-    $("article").hide();
-    $("#home-container").show();
+  // Home link/article listeners
+  $("#home").on("click", function() {
+    addArticleListener(this.id);
   });
 
-  $("#about-me").on("click", function(e) {
-    $("article").hide();
-    $("#about-container").show();
+  // About link/article listeners
+  $("#about").on("click", function() {
+    addArticleListener(this.id);
   });
 
-  $("#my-projects").on("click", function(e) {
-    $("article").hide();
-    $("#project-container").show();
+  // Project link/article listeners
+  $("#project").on("click", function() {
+    addArticleListener(this.id);
 
     loadProjects();
   });
 
-  $("#contact").on("click", function(e) {
-    $("article").hide();
-    $("#contact-container").show();
+  // Contact link/article listeners
+  $("#contact").on("click", function() {
+    addArticleListener(this.id);
   });
 });

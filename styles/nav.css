@@ -8,7 +8,8 @@ div.name {
   font-size: 32px;
   font-weight: bold;
   float: left;
-  margin: 5px 0px 0px 16px;
+  margin: 5px 0px 5px 16px;
+  padding: 0px;
 }
 
 div.nav-links {
@@ -18,11 +19,15 @@ div.nav-links {
 
 p.nav-links {
   float: left;
-  margin-right: 16px;
+  margin: 0px 16px 0px 0px;
   font-weight: bold;
+  padding: 12px 0px 0px 0px;
 }
 
-/*p.nav-links a {
-  text-decoration: none;
-  color: #009999;
-}*/
+.indicator-blank {
+  border-top: 4px solid #142850;
+}
+
+.indicator {
+  border-top: 4px solid white;
+}
