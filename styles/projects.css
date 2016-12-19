@@ -26,6 +26,7 @@ div.project-description {
 }
 
 div.github-container a {
+  padding-top: 3px;
   color: white;
   float: right;
   clear: right;
