@@ -2,19 +2,28 @@
 
 // Function that builds HTML for each project
 function appendProject(project) {
-  let $feed = `<p>
-    <span id="${project.id}" class="project-name pointer">${project.name} - ${project.techs}</span>
-    <div class="${project.class} hidden project-data">${project.data}
-    <a href="https://github.com/${project.endpoint}" class="pointer">Visit ${project.name}</a>
+  let $feed = `<div class="single-project-container">
+    <div class="project-header">
+      <div id="${project.id}" class="project-description pointer">
+        <span class="project-name">${project.name}</span>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        <span class="project-techs">${project.techs}</span>
+      </div>
+      <div class=github-container>
+        <a href="https://github.com/${project.endpoint}" class="pointer">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
-    </p>`;
+    <div class="${project.class} hidden project-data">${project.data}</div>
+    </div>`;
 
   return $feed;
 }
 
 // Function that attaches event listeners to all projects
 function addProjectListener(project) {
-  // On click will slide up or down project description box
+  // On click will show or hide project description box
   $(`#${project.id}`).on("click", function() {
     if ( $(`.${project.class}`).is(":hidden") ) {
       // $(`.${project.class}`).slideDown("slow");

@@ -3,12 +3,17 @@ nav {
   overflow: auto;
 }
 
+div.nav-container {
+  width: 960px;
+  margin: auto;
+}
+
 div.name {
   color: white;
   font-size: 32px;
   font-weight: bold;
   float: left;
-  margin: 5px 0px 5px 16px;
+  margin: 5px 0px 5px 0px;
   padding: 0px;
 }
 
@@ -19,7 +24,7 @@ div.nav-links {
 
 p.nav-links {
   float: left;
-  margin: 0px 16px 0px 0px;
+  margin: 0px 0px 0px 16px;
   font-weight: bold;
   padding: 12px 0px 0px 0px;
 }
@@ -31,3 +36,8 @@ p.nav-links {
 .indicator {
   border-top: 4px solid white;
 }
+
+p.pointer:hover {
+  color: orange;
+}
+

@@ -2,11 +2,44 @@ div.hidden {
   display: none;
 }
 
-div.project-data {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+div.single-project-container {
+  margin-bottom: 20px;
+  border: 1px solid #009999;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
 }
+
 
 span.project-name {
   font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+span.project-techs {
+  font-size: 20px;
+}
+
+div.project-description {
+  float: left;
+}
+
+div.github-container a {
+  color: white;
+  float: right;
+  clear: right;
+}
+
+div.github-container a:hover {
+  color: orange;
+}
+
+div.project-data {
+  margin-top: 10px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  float: left;
+  /*border-bottom: 1px solid white;*/
+  /*line-height: 2em;*/
 }

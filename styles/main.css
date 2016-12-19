@@ -3,6 +3,7 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   margin: auto;
   background-color: #142850;
+  /*width: 960px;*/
 }
 
 section#body-container {
@@ -16,10 +17,6 @@ h1, h2 {
 
 .pointer {
   cursor: pointer;
-}
-
-.pointer:hover {
-  color: orange;
 }
 
 .hidden {
