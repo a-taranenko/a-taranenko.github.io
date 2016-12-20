@@ -54,10 +54,13 @@ function loadProjects() {
   });
 }
 
+// Adds a CSS class to a clicked navigation element that indicates which page is displayed
 function addArticleListener(article) {
   $(".nav-links").removeClass("indicator");
   $(`#${article}`).addClass("indicator");
 
-  $("article").hide();
-  $(`#${article}-container`).show();
+  // $("article").hide();
+  // $(`#${article}-container`).show();
+
+  $(".content-wrapper").scrollTo($(`#${article}-container-outer`), 800);
 }

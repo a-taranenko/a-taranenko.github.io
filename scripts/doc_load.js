@@ -2,6 +2,10 @@
 
 // Loads proper page content and indicator via listeners
 $(document).ready(function() {
+
+  // Loads project info from a file or database
+  loadProjects();
+
   // Home link/article listeners
   $("#home").on("click", function() {
     addArticleListener(this.id);
@@ -15,12 +19,14 @@ $(document).ready(function() {
   // Project link/article listeners
   $("#project").on("click", function() {
     addArticleListener(this.id);
-
-    loadProjects();
   });
 
   // Contact link/article listeners
   $("#contact").on("click", function() {
     addArticleListener(this.id);
+  });
+
+  $(window).resize(function() {
+    $(".content-wrapper").scrollTo(`#${$("p.indicator").attr("id")}-container-outer`);
   });
 });

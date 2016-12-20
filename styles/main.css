@@ -3,12 +3,18 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   margin: auto;
   background-color: #142850;
-  /*width: 960px;*/
+  width: 100%;
+}
+
+.content-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 section#body-container {
-  width: 960px;
-  margin: auto;
+  /*width: 960px;*/
+  width: 400%;
 }
 
 h1, h2 {
@@ -21,4 +27,14 @@ h1, h2 {
 
 .hidden {
   display: none;
+}
+
+.outer-boundary {
+  width: 25%;
+  float: left;
+}
+
+.slide-content {
+  width: 960px;
+  margin: auto;
 }

@@ -20,6 +20,10 @@
   <!-- JQuery -->
   <script type="text/javascript" src="vendor/jquery_3.0.0.js"></script>
 
+  <!-- JQuery scrollTo plugins -->
+  <script type="text/javascript" src="vendor/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="vendor/jquery.scrollTo.js"></script>
+
   <!-- Project data -->
   <script type="text/javascript" src="scripts/project_data.js"></script>
 
@@ -43,65 +47,76 @@
     </div>
   </nav>
 
+<div class="content-wrapper">
+
   <section id="body-container">
     <!-- Tagline section -->
-    <article id="home-container">
-      <h2>Hello and Welcome to my Website</h2>
+    <div id="home-container-outer" class="outer-boundary">
+      <article id="home-container" class="slide-content">
+        <h2>Hello and Welcome to my Website</h2>
 
-      <p>I am a Researcher and an Engineer turned Web Developer, who is passionate about learning and implementing new technologies. Web Development provides a solid platform for my goals and ambitions - to exercise my creative muscle and avoid the monotony of 'carbon-copy' days.</p>
-    </article>
+        <p>I am a Researcher and an Engineer turned Web Developer, who is passionate about learning and implementing new technologies. Web Development provides a solid platform for my goals and ambitions - to exercise my creative muscle and avoid the monotony of 'carbon-copy' days.</p>
+      </article>
+    </div>
 
     <!-- More in-depth section about me -->
-    <article id="about-container" class="hidden">
-      <h2>About Me</h2>
+    <div id="about-container-outer" class="outer-boundary">
+      <article id="about-container" class="slide-content">
+        <h2>About Me</h2>
 
-      <p>I am a Junior Developer who looks forward to working on and creating something new everyday because it
-        gives me a great sense of satisfaction and enjoyment. I am also a Chemical Engineer, whose tasks (i.e.
-        solving continuity equations) often required heavy use of coding, which over time greatly raised my
-        programming interest, and made me pursue a new career path. I find it interesting working with others,
-        strive to keep my code clean, and am open to both front and back-end development. Currently, I am
-        looking to strengthen my fundamental programming knowledge, while picking up new concepts and
-        applying both on a daily basis. I am used to learning new languages, I speak three myself, and even spoke
-        conversational Japanese when I was nine.
-      </p>
-    </article>
+        <p>I am a Junior Developer who looks forward to working on and creating something new everyday because it
+          gives me a great sense of satisfaction and enjoyment. I am also a Chemical Engineer, whose tasks (i.e.
+          solving continuity equations) often required heavy use of coding, which over time greatly raised my
+          programming interest, and made me pursue a new career path. I find it interesting working with others,
+          strive to keep my code clean, and am open to both front and back-end development. Currently, I am
+          looking to strengthen my fundamental programming knowledge, while picking up new concepts and
+          applying both on a daily basis. I am used to learning new languages, I speak three myself, and even spoke
+          conversational Japanese when I was nine.
+        </p>
+      </article>
+    </div>
 
     <!-- Projects section -->
-    <article id="project-container" class="hidden">
-      <h2>My Projects</h2>
+    <div id="project-container-outer" class="outer-boundary">
+      <article id="project-container" class="slide-content">
+        <h2>My Projects</h2>
 
-      <div id="project-list-container"></div>
-    </article>
+        <div id="project-list-container"></div>
+      </article>
+    </div>
 
     <!-- Contact section -->
-    <article id="contact-container" class="hidden">
-      <h2>Contact Me</h2>
+    <div id="contact-container-outer" class="outer-boundary">
+      <article id="contact-container" class="slide-content">
+        <h2>Contact Me</h2>
 
-      <p>
-        <div class="fa-icon-container"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-        <a href="mailto:taranenko.anton@gmail.com">taranenko.anton@gmail.com</a>
-      </p>
+        <p>
+          <div class="fa-icon-container"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+          <a href="mailto:taranenko.anton@gmail.com">taranenko.anton@gmail.com</a>
+        </p>
 
-      <p>
-        <div class="fa-icon-container"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        Edmonton, Alberta
-      </p>
+        <p>
+          <div class="fa-icon-container"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          Edmonton, Alberta
+        </p>
 
-      <p>
-        <div class="fa-icon-container"><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
-        <a href="https://ca.linkedin.com/in/anton-taranenko-849a3830">anton-taranenko-849a3830</a>
-      </p>
+        <p>
+          <div class="fa-icon-container"><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+          <a href="https://ca.linkedin.com/in/anton-taranenko-849a3830">anton-taranenko-849a3830</a>
+        </p>
 
-      <p>
-        <div class="fa-icon-container"><i class="fa fa-github" aria-hidden="true"></i></div>
-        <a href="https://github.com/a-taranenko">a-taranenko</a>
-      </p>
+        <p>
+          <div class="fa-icon-container"><i class="fa fa-github" aria-hidden="true"></i></div>
+          <a href="https://github.com/a-taranenko">a-taranenko</a>
+        </p>
 
-      <p>
-        <div class="fa-icon-container"><i class="fa fa-file-text" aria-hidden="true"></i></div>
-        <a href="https://resume.creddle.io/review/2idjb1cdtma">https://resume.creddle.io/review/2idjb1cdtma</a>
-      </p>
-    </article>
+        <p>
+          <div class="fa-icon-container"><i class="fa fa-file-text" aria-hidden="true"></i></div>
+          <a href="https://resume.creddle.io/review/2idjb1cdtma">https://resume.creddle.io/review/2idjb1cdtma</a>
+        </p>
+      </article>
+    </div>
   </section>
+</div>
 </body>
 </html>
