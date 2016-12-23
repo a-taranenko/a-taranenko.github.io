@@ -18,6 +18,6 @@ So far the website uses:
 ## Notes
 
 - Preferred browser: Google Chrome
-- Haven't accounted for window resizing effect on page content
-- Haven't accounted for window width resizing effects due to a scroll bar appearance
+- Haven't accounted for window's small size effect on page content
+- Haven't accounted for window width resizing effects due to scroll bar appearance
 - Some code refactoring still needs to be done in listeners.js

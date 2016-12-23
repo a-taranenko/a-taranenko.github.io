@@ -45,12 +45,7 @@ $(document).ready(function() {
     } else if (windowWidth < 960 && $(window).width() > 960) {
       windowWidthChange = 960 - $(window).width();
 
-// console.log(windowWidthChange);
-// console.log($(window).width());
-// console.log($("#page-indicator").position().left);
-
       $("#page-indicator").animate({ "left": `-=${windowWidthChange/2}px` }, 0);
-// console.log($("#page-indicator").position().left);
     }
 
     windowWidth = $(window).width();

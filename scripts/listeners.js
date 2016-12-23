@@ -78,8 +78,5 @@ function addArticleListener(article) {
   $(".nav-links").removeClass("indicator");
   $(`#${article}`).addClass("indicator");
 
-  // $("article").hide();
-  // $(`#${article}-container`).show();
-
   $(".content-wrapper").scrollTo($(`#${article}-container-outer`), 800);
 }
