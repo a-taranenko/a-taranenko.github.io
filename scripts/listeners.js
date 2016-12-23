@@ -1,4 +1,5 @@
 'use strict';
+
 let indicatorListener = 0;
 
 // Function that builds HTML for each project
@@ -64,8 +65,8 @@ function addArticleListener(article) {
   if (indicatorListener === 0) {
     $("#page-indicator")
       .animate(
-        { "left": `+=${$(".indicator").position().left+parseInt($(".indicator").css("margin-left"))}px`,
-          "width": `${$(".indicator").css("width")}`}, 0)
+        { "left": `-=${$("#page-indicator").position().left-oldElementPosition-parseInt($(".indicator").css("margin-left"))}px`,
+          "width": `${$(".indicator").css("width")}` }, 0)
       .css("background-color", "white");
 
     $(".nav-links").css("border-color", "#142850");
