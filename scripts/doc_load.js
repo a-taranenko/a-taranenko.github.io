@@ -2,7 +2,6 @@
 
 // Loads proper page content and indicator via listeners
 $(document).ready(function() {
-
   // Loads project info from a file or database
   loadProjects();
 
@@ -26,6 +25,7 @@ $(document).ready(function() {
     addArticleListener(this.id);
   });
 
+  // Adjusts page content if the window is resized
   $(window).resize(function() {
     $(".content-wrapper").scrollTo(`#${$("p.indicator").attr("id")}-container-outer`);
   });

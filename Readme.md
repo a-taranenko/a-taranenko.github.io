@@ -14,3 +14,10 @@ So far the website uses:
 - JQuery
 - Javascript
 - Font Awesome styling
+
+## Notes
+
+- Preferred browser: Google Chrome
+- Haven't accounted for window resizing effect on navigation indicator position
+- Haven't accounted for window width resizing due to a scroll bar appearance yet
+- Some code refactoring still needs to be done in listeners.js

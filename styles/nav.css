@@ -24,7 +24,8 @@ div.nav-links {
 
 p.nav-links {
   float: left;
-  margin: 0px 0px 0px 16px;
+  margin: 0;
+  margin-left: 16px;
   font-weight: bold;
   padding: 12px 0px 0px 0px;
 }
@@ -39,4 +40,12 @@ p.nav-links {
 
 p.pointer:hover {
   color: orange;
+}
+
+#page-indicator {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 4px;
+  width: 47px;
 }

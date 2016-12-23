@@ -1,4 +1,5 @@
 'use strict';
+let indicatorListener = 0;
 
 // Function that builds HTML for each project
 function appendProject(project) {
@@ -56,6 +57,23 @@ function loadProjects() {
 
 // Adds a CSS class to a clicked navigation element that indicates which page is displayed
 function addArticleListener(article) {
+  let newElementPosition = $(`#${article}`).position().left;
+  let oldElementPosition = $(".indicator").position().left;
+  let moveBy = newElementPosition - oldElementPosition;
+
+  if (indicatorListener === 0) {
+    $("#page-indicator")
+      .animate(
+        { "left": `+=${$(".indicator").position().left+parseInt($(".indicator").css("margin-left"))}px`,
+          "width": `${$(".indicator").css("width")}`}, 0)
+      .css("background-color", "white");
+
+    $(".nav-links").css("border-color", "#142850");
+
+    indicatorListener++;
+  }
+  $("#page-indicator").animate({ "left": `+=${moveBy}px`, "width": `${$(`#${article}`).css("width")}` }, 800);
+
   $(".nav-links").removeClass("indicator");
   $(`#${article}`).addClass("indicator");
 
