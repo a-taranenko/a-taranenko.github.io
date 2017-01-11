@@ -28,19 +28,19 @@ function addProjectListener(project) {
   // On click will show or hide project description box
   $(`#${project.id}`).on("click", function() {
     if ( $(`.${project.class}`).is(":hidden") ) {
-      // $(`.${project.class}`).slideDown("slow");
-      $(`.${project.class}`).show();
+      $(`.${project.class}`).slideDown(500);
+      // $(`.${project.class}`).show();
 
       // All other project boxes are hidden when a current project is selected
       projects.forEach(function(projectInner) {
         if (projectInner.endpoint !== project.endpoint && $(`.${projectInner.class}`).is(":visible")) {
-          // $(`.${projectInner.class}`).slideUp("slow");
-          $(`.${projectInner.class}`).hide();
+          $(`.${projectInner.class}`).slideUp(500);
+          // $(`.${projectInner.class}`).hide();
         }
       });
     } else {
-      // $(`.${project.class}`).slideUp("slow");
-      $(`.${project.class}`).hide();
+      $(`.${project.class}`).slideUp(500);
+      // $(`.${project.class}`).hide();
     }
   });
 }
@@ -69,7 +69,7 @@ function addArticleListener(article) {
           "width": `${$(".indicator").css("width")}` }, 0)
       .css("background-color", "white");
 
-    $(".nav-links").css("border-color", "#142850");
+    $(".nav-links").css("border-color", "#3a73a9");
 
     indicatorListener++;
   }

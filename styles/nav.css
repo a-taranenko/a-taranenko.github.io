@@ -31,7 +31,8 @@ p.nav-links {
 }
 
 .indicator-blank {
-  border-top: 4px solid #142850;
+  /*border-top: 4px solid #142850;*/
+  border-top: 4px solid #3777a0;
 }
 
 .indicator {

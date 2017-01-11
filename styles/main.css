@@ -1,8 +1,17 @@
 body {
-  color: #009999;
+  /*color: #009999;*/
+  /*color: #142850;*/
+  /*color: #b0df00;*/
+  /*color: #b0dfd1;*/
+  /*color: #b0dffb;*/
+  color: #101030;
   font-family: 'Nunito Sans', sans-serif;
   margin: auto;
-  background-color: #142850;
+  /*background-color: #142850;*/
+  /*background-color: #146d85;*/
+  /*background-color: #436d85;*/
+  /*background-color: #3777a0;*/
+  background-color: #3a73a9;
   width: 100%;
 }
 
@@ -13,7 +22,7 @@ body {
 }
 
 section#body-container {
-  width: 400%;
+  width: 300%;
 }
 
 h1, h2 {
@@ -29,7 +38,7 @@ h1, h2 {
 }
 
 .outer-boundary {
-  width: 25%;
+  width: 33.33333%;
   float: left;
   overflow: hidden;
 }
