@@ -8,9 +8,9 @@ div.single-project-container {
   border: 1px solid white;
   border-radius: 5px;
   padding: 10px;
+  padding-bottom: 0px;
   overflow: auto;
 }
-
 
 span.project-name {
   font-weight: bold;
@@ -38,10 +38,16 @@ div.github-container a:hover {
 }
 
 div.project-data {
-  margin-top: 10px;
   border-top: 1px solid white;
-  padding-top: 10px;
+  padding: 10px 0px;
   float: left;
+  overflow: auto;
   /*border-bottom: 1px solid white;*/
   /*line-height: 2em;*/
 }
+
+div.project-header {
+  padding-bottom: 10px;
+  overflow: auto;
+}
+
