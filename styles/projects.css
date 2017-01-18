@@ -27,10 +27,11 @@ div.project-description {
 }
 
 div.github-container a {
-  padding-top: 3px;
+  padding-top: 2px;
   color: white;
   float: right;
   clear: right;
+  font-size: 110%;
 }
 
 div.github-container a:hover {
@@ -44,6 +45,7 @@ div.project-data {
   overflow: auto;
   /*border-bottom: 1px solid white;*/
   /*line-height: 2em;*/
+  font-size: 110%;
 }
 
 div.project-header {
